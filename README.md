@@ -10,10 +10,10 @@ git clone path
 
 二、 设置 用户名和密码
 git config --global user.name "leon"
-git config --global user.email "leon@huawei.com"
+git config --global user.email "leon@xxx.com"
 
 三、 生成本机公钥
-ssh-keygen -t rsa -C "leon@huawei.com"
+ssh-keygen -t rsa -C "leon@xxx.com"
 
 四、忽略不纳入版本库的文件或目录
 1. 在项目根目录，新建.gitignore 文件，并增加忽略的文件或目录 (只作用于当前项目)
@@ -80,7 +80,7 @@ git branch -d myBranch 删除本地分支
 
 冲突发生在多人修改文件同一部分, 从主库更新文件到本地时
 第一步：冲突时git会提示哪些文件冲突了，打开相应的文件，进行手动解决，删除哪些，保留哪些。
-对于前段dist目录下的文件可以进行重新编译即可.
+对于前端dist目录下的文件可以进行重新编译即可.
 第二步:  解决冲突后，利用git add 命令加入暂存区，然后利用git commit进行提交，会自动生成提交记录
 第三步： 如果需要推送代码到远程仓库，利用git push 同步代码到远程仓库
 
